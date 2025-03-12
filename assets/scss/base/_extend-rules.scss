@@ -1,0 +1,19 @@
+/*
+*
+* Styles that can be inherited in other classes
+! you can add this code to your code anywhere else, by add @extend %name
+*
+*/
+
+%text {
+	font: {
+		family: $font-text;
+		size: 1.6rem;
+		weight: 400;
+	}
+	line-height: 2.1rem;
+	@include from(tabletL) {
+		font-size: 1.6rem;
+		line-height: 2.1rem;
+	}
+}

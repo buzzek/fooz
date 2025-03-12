@@ -1,0 +1,46 @@
+/*
+*
+* Mixins for media query
+*
+*/
+
+@use "sass:map";
+
+@mixin from($width) {
+	@if map.get($breakpoints, $width) {
+		$width: map.get($breakpoints, $width);
+
+		@media (min-width: ($width + 1px)) {
+			@content;
+		}
+	} @else if type_of($width) == number and unit($width) == px or unit($width) == em or unit($width) == rem {
+		@media (min-width: $width) {
+			@content;
+		}
+	}
+}
+
+@mixin to($width) {
+	@if map.get($breakpoints, $width) {
+		$width: map.get($breakpoints, $width);
+
+		@media (max-width: $width) {
+			@content;
+		}
+	} @else if type_of($width) == number and unit($width) == px or unit($width) == em or unit($width) == rem {
+		@media (max-width: $width) {
+			@content;
+		}
+	}
+}
+
+@mixin between($min-width, $max-width) {
+	@if map-has-key($breakpoints, $min-width) and map-has-key($breakpoints, $max-width) {
+		$min-width: map.get($breakpoints, $min-width);
+		$max-width: map.get($breakpoints, $max-width);
+
+		@media (min-width: ($min-width + 1px)) and (max-width: $max-width) {
+			@content;
+		}
+	}
+}

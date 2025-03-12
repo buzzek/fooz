@@ -1,0 +1,30 @@
+/*
+*
+* Only for imported parts of styles.
+*
+*/
+
+/*
+*
+* Import core styles
+*
+*/
+
+@import "base/variables"; // Usefull variables for every part of styles.
+@import "base/responsive"; // Styles only for responsive staff.
+@import "base/extend-rules"; // Styles that can be inherited in other classes
+
+/*
+*
+* Import layout styles
+*
+*/
+
+@import "layout/single-book"; // Styles only for single post
+/*
+*
+* Import additional components
+*
+*/
+
+//@import "components/blog-posts-box.scss"; // Styles only for blog posts block

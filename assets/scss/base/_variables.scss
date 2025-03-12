@@ -1,0 +1,39 @@
+/*
+*
+* Usefull varaibles for every part of styles.
+*
+*/
+
+/*
+*
+* Usefull variables
+*
+*/
+
+$img-path: "../dist/img/";
+
+/*
+*
+* Typography variables
+*
+*/
+
+$font-text: "Roboto", serif;
+
+/*
+*
+* Breakpoints used in mixins for media query
+*
+*/
+
+$breakpoints: (
+	"phoneS": 350px,
+	"phoneM": 420px,
+	"phoneL": 576px,
+	"tablet": 768px,
+	"tabletL": 992px,
+	"laptop": 1200px,
+	"laptopL": 1441px,
+	"desktop": 1620px,
+	"desktopL": 1920px
+);

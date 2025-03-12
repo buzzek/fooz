@@ -1,0 +1,7 @@
+.history
+/dist/
+/vendor/
+composer.phar
+composer.lock
+package-lock.json
+node_modules

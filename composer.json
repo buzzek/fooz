@@ -1,0 +1,8 @@
+{
+	"autoload": {
+		"psr-4": {
+			"Fooz\\": "inc/",
+			"Fooz\\Config\\": "inc/config/"
+		}
+	}
+}
