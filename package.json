@@ -7,7 +7,7 @@
 		"build": "webpack",
 		"buildprod": "webpack --mode production",
 		"watch": "webpack --watch",
-		"dumpbase": "php F:/wp-cli/wp.phar db export ./backup.sql"
+		"dumpbase": "php C:/wp-cli/wp.phar db export ./backup.sql"
 	},
 	"author": "",
 	"license": "ISC",
